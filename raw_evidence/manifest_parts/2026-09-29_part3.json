@@ -1,0 +1,50 @@
+[
+  {
+    "trading_date": "2026-09-29",
+    "source_id": "TPEX_SHORT_LENDING_HTML",
+    "family": "short_lending",
+    "business_key": "2026-09-29",
+    "first_seen_at_utc": "2026-09-29T13:51:04.867535+00:00",
+    "raw_sha256": "a797c6e0922f34d28b306734f2017e9f612bd4c8e17f69d56c630de50b89987c",
+    "semantic_sha256": "519f0fd2631f807d3e10755abde8317de9a99d20deb2b23386945efbb2131bca",
+    "semantic_algorithm_version": "security_rows_v1",
+    "semantic_row_count": 931,
+    "source_scope_fingerprint": "c364ae7b0bd32b4930e829d641d5eec2af43a5baf92248e097fd1ce2cd0feea7",
+    "byte_size": 583412,
+    "content_type": "text/html;charset=UTF-8",
+    "raw_path": "raw_evidence/2026-09-29/TPEX_SHORT_LENDING_HTML/20260929T135104Z_a797c6e0922f34d2.html",
+    "meta_path": "raw_evidence/2026-09-29/TPEX_SHORT_LENDING_HTML/20260929T135104Z_a797c6e0922f34d2.html.meta.json"
+  },
+  {
+    "trading_date": "2026-09-29",
+    "source_id": "TWSE_CORPORATE_ACTION_CSV",
+    "family": "corporate_action",
+    "business_key": null,
+    "first_seen_at_utc": "2026-09-29T09:54:52.525944+00:00",
+    "raw_sha256": "dd264dd6c72336d1daa4cd5692d6e6ec0a1e489b6ac04cf3d2818e5ef2b4bf86",
+    "semantic_sha256": "dd264dd6c72336d1daa4cd5692d6e6ec0a1e489b6ac04cf3d2818e5ef2b4bf86",
+    "semantic_algorithm_version": "raw_v1",
+    "semantic_row_count": null,
+    "source_scope_fingerprint": null,
+    "byte_size": 2212,
+    "content_type": "text/csv;charset=utf-8",
+    "raw_path": "raw_evidence/2026-09-29/TWSE_CORPORATE_ACTION_CSV/20260929T095452Z_dd264dd6c72336d1.csv",
+    "meta_path": "raw_evidence/2026-09-29/TWSE_CORPORATE_ACTION_CSV/20260929T095452Z_dd264dd6c72336d1.csv.meta.json"
+  },
+  {
+    "trading_date": "2026-09-29",
+    "source_id": "TPEX_CORPORATE_ACTION_CSV",
+    "family": "corporate_action",
+    "business_key": null,
+    "first_seen_at_utc": "2026-09-29T08:46:52.860892+00:00",
+    "raw_sha256": "05e16450f405b6d1faab052070279c6dcfe0df9bf235c58a47c9eb1c7c5610ae",
+    "semantic_sha256": null,
+    "semantic_algorithm_version": null,
+    "semantic_row_count": null,
+    "source_scope_fingerprint": null,
+    "byte_size": 4482,
+    "content_type": "application/csv;charset=utf-8",
+    "raw_path": "raw_evidence/2026-09-29/TPEX_CORPORATE_ACTION_CSV/20260929T084652Z_05e16450f405b6d1.csv",
+    "meta_path": "raw_evidence/2026-09-29/TPEX_CORPORATE_ACTION_CSV/20260929T084652Z_05e16450f405b6d1.csv.meta.json"
+  }
+]
