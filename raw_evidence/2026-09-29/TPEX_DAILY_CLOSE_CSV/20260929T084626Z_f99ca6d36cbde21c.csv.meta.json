@@ -1,0 +1,18 @@
+{
+  "source_id": "TPEX_DAILY_CLOSE_CSV",
+  "family": "market_daily",
+  "source_config_version": "1.0",
+  "url_requested": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW",
+  "url_final": "https://www.tpex.org.tw/web/stock/aftertrading/otc_quotes_no1430/stk_wn1430_result.php?l=zh-tw&o=data&se=EW",
+  "fetched_at_utc": "2026-09-29T08:46:26.565172+00:00",
+  "first_seen_at_utc": "2026-09-29T08:46:26.565172+00:00",
+  "http_status": 200,
+  "content_type": "application/csv;charset=utf-8",
+  "http_date": "Tue, 29 Sep 2026 08:46:27 GMT",
+  "last_modified": null,
+  "etag": null,
+  "cache_control": "private",
+  "content_sha256": "f99ca6d36cbde21ce1badc5e42cdef77483ce2a99370e5b27d4d1d6ebeb20945",
+  "byte_size": 141116,
+  "raw_path": "archive/TPEX_DAILY_CLOSE_CSV/2026/09/29/20260929T084626Z_f99ca6d36cbde21c.csv"
+}
