@@ -1,0 +1,50 @@
+[
+  {
+    "trading_date": "2026-10-01",
+    "source_id": "TWSE_T86_HTML",
+    "family": "institutional_flow",
+    "business_key": "2026-10-01",
+    "first_seen_at_utc": "2026-10-01T16:03:50.391366+00:00",
+    "raw_sha256": "8e923f64cc5c9343fac4a8e473e5e4bc43ea728b507fcfd52f16971ddf68828d",
+    "semantic_sha256": "f3fae3dc07167e8680f0e8563a9761d90cadaeeaf4418c7dcf04bd7cc5ce6215",
+    "semantic_algorithm_version": "security_rows_v1",
+    "semantic_row_count": 1337,
+    "source_scope_fingerprint": "79d719bf0009bdefaf8afb689689c63a39c3bc963fc6f3517d154654099573d3",
+    "byte_size": 1666317,
+    "content_type": "text/html;charset=utf-8",
+    "raw_path": "raw_evidence/2026-10-01/TWSE_T86_HTML/20261001T160350Z_8e923f64cc5c9343.html",
+    "meta_path": "raw_evidence/2026-10-01/TWSE_T86_HTML/20261001T160350Z_8e923f64cc5c9343.html.meta.json"
+  },
+  {
+    "trading_date": "2026-10-01",
+    "source_id": "TWSE_MARGIN_HTML",
+    "family": "margin_short",
+    "business_key": "2026-10-01",
+    "first_seen_at_utc": "2026-10-01T16:03:59.453067+00:00",
+    "raw_sha256": "940912a36981ba061103c48dc56539e16b63631fec1b1b5cad0e0b08c25773dd",
+    "semantic_sha256": "e184f214d70846c237aeaaa4d74b63a2623aae77e19316cb4afdc23ce9b1109a",
+    "semantic_algorithm_version": "security_rows_v1",
+    "semantic_row_count": 1297,
+    "source_scope_fingerprint": "273098a917c51f5447ccae4ed4b48cbd10b433235cc85f13398137063d440383",
+    "byte_size": 1735945,
+    "content_type": "text/html;charset=utf-8",
+    "raw_path": "raw_evidence/2026-10-01/TWSE_MARGIN_HTML/20261001T160359Z_940912a36981ba06.html",
+    "meta_path": "raw_evidence/2026-10-01/TWSE_MARGIN_HTML/20261001T160359Z_940912a36981ba06.html.meta.json"
+  },
+  {
+    "trading_date": "2026-10-01",
+    "source_id": "TWSE_SHORT_LENDING_HTML",
+    "family": "short_lending",
+    "business_key": "2026-10-01",
+    "first_seen_at_utc": "2026-10-01T16:04:03.167785+00:00",
+    "raw_sha256": "3c0a6a7e88826ebab48164300c8418fd992c1654e9604c250d865199c3435723",
+    "semantic_sha256": "6e457d7789730723f82f254292d7bc56eb1f86ab71d7dc06f1ae3329aa3f507f",
+    "semantic_algorithm_version": "security_rows_v1",
+    "semantic_row_count": 1301,
+    "source_scope_fingerprint": "c364ae7b0bd32b4930e829d641d5eec2af43a5baf92248e097fd1ce2cd0feea7",
+    "byte_size": 1321926,
+    "content_type": "text/html;charset=utf-8",
+    "raw_path": "raw_evidence/2026-10-01/TWSE_SHORT_LENDING_HTML/20261001T160403Z_3c0a6a7e88826eba.html",
+    "meta_path": "raw_evidence/2026-10-01/TWSE_SHORT_LENDING_HTML/20261001T160403Z_3c0a6a7e88826eba.html.meta.json"
+  }
+]
