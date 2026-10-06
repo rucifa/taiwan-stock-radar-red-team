@@ -1,0 +1,10 @@
+{
+  "latest_business_date": "2026-10-05",
+  "daily_data_path": "data/daily/2026/2026-10-05.json",
+  "daily_report_path": "reports/daily/2026/2026-10-05.md",
+  "record_status": "PARTIAL",
+  "data_confidence": "MEDIUM",
+  "last_capture_at": "2026-10-05T16:03:08.030225Z",
+  "last_verified_at": "2026-10-06T02:55:21.662787Z",
+  "note": "2026-10-05 backfilled into simplified daily schema; remaining N/A fields documented in daily record/report."
+}
