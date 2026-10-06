@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "generated_for": "five-day independent red-team",
+  "trading_dates": [
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-05"
+  ],
+  "source_scope": [
+    "TWSE_DAILY_ALL_CSV",
+    "TPEX_DAILY_CLOSE_CSV",
+    "TWSE_T86_HTML",
+    "TPEX_3INSTI_HTML",
+    "TWSE_MARGIN_HTML",
+    "TPEX_MARGIN_HTML",
+    "TWSE_SHORT_LENDING_HTML",
+    "TPEX_SHORT_LENDING_HTML",
+    "TWSE_CORPORATE_ACTION_CSV",
+    "TPEX_CORPORATE_ACTION_CSV"
+  ],
+  "selection_rule": "One preserved final snapshot per source/date, plus an explicit 2026-09-29 TPEX_3INSTI revision before/after case. Original Raw and .meta.json are copied without semantic rewriting.",
+  "runtime_scheduler_reliability": "SEPARATE_NON_BLOCKING_OBSERVATION",
+  "entries": [],
+  "revision_cases": []
+}
