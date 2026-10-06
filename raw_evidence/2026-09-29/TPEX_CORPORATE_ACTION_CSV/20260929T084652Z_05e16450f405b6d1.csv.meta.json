@@ -1,0 +1,18 @@
+{
+  "source_id": "TPEX_CORPORATE_ACTION_CSV",
+  "family": "corporate_action",
+  "source_config_version": "1.0",
+  "url_requested": "https://www.tpex.org.tw/web/stock/exright/preAnnounce/prepost_result.php?l=zh-tw&o=data",
+  "url_final": "https://www.tpex.org.tw/web/stock/exright/preAnnounce/prepost_result.php?l=zh-tw&o=data",
+  "fetched_at_utc": "2026-09-29T08:46:52.860892+00:00",
+  "first_seen_at_utc": "2026-09-29T08:46:52.860892+00:00",
+  "http_status": 200,
+  "content_type": "application/csv;charset=utf-8",
+  "http_date": "Tue, 29 Sep 2026 08:46:53 GMT",
+  "last_modified": null,
+  "etag": null,
+  "cache_control": "private",
+  "content_sha256": "05e16450f405b6d1faab052070279c6dcfe0df9bf235c58a47c9eb1c7c5610ae",
+  "byte_size": 4482,
+  "raw_path": "archive/TPEX_CORPORATE_ACTION_CSV/2026/09/29/20260929T084652Z_05e16450f405b6d1.csv"
+}
