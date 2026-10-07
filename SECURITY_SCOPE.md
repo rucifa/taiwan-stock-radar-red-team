@@ -1,24 +1,22 @@
 # SECURITY_SCOPE
 
-This public mirror is built as a fresh snapshot rather than a clone.
+This repository is a sanitized public audit mirror.
 
 ## Included
 
-- current core architecture/specification documents
-- sanitized scheduler contract
-- one current daily JSON sample
-- one current daily report sample
-- current `state/latest.json`
+- current core specifications
+- sanitized scheduler summary
+- sample daily JSON/report/state files
+- selected Raw + metadata for five trading dates
+- one TPEx same-day revision replay case
+- a compact 50-entry Raw evidence manifest
 
-## Excluded by design
+## Excluded
 
-- private production Git history
-- personal commit email metadata
-- GitHub Actions logs
-- GitHub Actions artifacts
-- private automation task IDs
+- production Git history and personal commit metadata
+- Actions logs/artifacts
 - credentials, secrets and tokens
-- Legacy raw archives
-- private repository location
+- automation task identifiers and unrelated runtime identifiers
+- the full legacy Raw/archive/evidence corpus
 
-The production repository remains private and authoritative. This public mirror is audit material only.
+Files under `raw_evidence/` are intentionally published for independent audit. Public metadata keeps replay-critical date/hash/time/size fields while unrelated runtime identifiers may be omitted.
