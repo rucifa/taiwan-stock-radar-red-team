@@ -1,70 +1,58 @@
-# Five-Day Raw Data Red-Team Request
+# 五個交易日資料｜對外紅隊測試提示詞
 
-Perform an independent, read-only audit of `raw_evidence/` together with the current core specifications in `core/`.
+> **僅在 Public Red-Team GitHub 的五日包已完整寫入且通過基本完整性核對後才使用本提示詞。** 這是給外部 Gemini / Grok / Perplexity 的獨立審查任務，不是要求紅隊修改 GitHub。
 
-## Primary decision question
+請作為獨立 Red Team，**唯讀查核**以下 Public Repository：
 
-> Based on the current rules and the five real trading days of preserved evidence, is the Taiwan Stock Radar data pipeline sufficiently correct, traceable, and replayable to proceed to the next project phase?
+**https://github.com/rucifa/taiwan-stock-radar-red-team**
 
-Do **not** turn long-term 00:00 / 07:00 scheduler reliability into a prerequisite for this verdict. Scheduled runtime reliability is observed separately as future production cycles execute.
+本次只有一個主要決策問題：
 
-## Audit window
+> **基於現在的核心規則，以及五個交易日真實 Raw／metadata／hash／修訂 evidence，是否足以證明每日資料流程的正確性、可追溯性與可重播性，並讓「台股投資雷達」專案進入下一階段？**
 
-- 2026-09-29
-- 2026-09-30
-- 2026-10-01
-- 2026-10-02
-- 2026-10-05
+## 請閱讀
 
-## Required tests
+1. `core/README_FIRST.md`
+2. `core/DAILY_MARKET_RADAR_SPEC.md`
+3. `core/MARKET_RADAR_ANALYSIS_SPEC.md`
+4. `RAW_DATA_RED_TEAM_REQUEST.md`
+5. `raw_evidence/README.md`
+6. `raw_evidence/RAW_EVIDENCE_MANIFEST.json`
+7. `raw_evidence/2026-09-29/`
+8. `raw_evidence/2026-09-30/`
+9. `raw_evidence/2026-10-01/`
+10. `raw_evidence/2026-10-02/`
+11. `raw_evidence/2026-10-05/`
+12. `raw_evidence/revision_cases/`
+13. `sample/data/2026/2026-10-05.json`、`sample/reports/2026/2026-10-05.md`、`sample/state/latest.json`
 
-1. Verify source coverage by date against `raw_evidence/RAW_EVIDENCE_MANIFEST.json`.
-2. Verify business-date correctness from the Raw payload and metadata where applicable.
-3. Look specifically for stale prior-day contamination or wrong-date acceptance.
-4. Recompute Raw SHA-256 and compare with metadata/manifest.
-5. Check semantic hash / source-scope provenance where provided.
-6. Confirm structured Raw payloads are materially parseable and not false-success empty/schema-drift payloads.
-7. Check duplicate/revision behavior and the preserved 2026-09-29 TPEx revision case.
-8. Test whether the evidence can support deterministic reconstruction of the data inputs needed by the simplified daily flow.
-9. Compare the data-handling behavior with `core/DAILY_MARKET_RADAR_SPEC.md`.
-10. Identify only concrete blockers that would make daily storage or analysis materially unsafe.
+## 必須獨立驗證
 
-## Required verdict
+- 5 個交易日、每日十種指定來源的 coverage 和 metadata 指標（50 組）。
+- Raw bytes 與 SHA-256 是否一致；如無法下載或算 hash，明確列「未驗證」，不能假裝 PASS。
+- 真實 Raw 日期與 `business_key` 是否正確，是否會把先前交易日的 stale data 誤認為 target date。
+- 原始檔是否非空、可解析、沒有 schema drift 或 false PASS。
+- 缺值、尚未公布、STALE/ERROR/N/A 的處理是否會誤當成 0。
+- 2026-09-29 `TPEX_3INSTI_HTML` before/after 是否為可確認的同日修訂、是否保留雙版本可 replay。
+- 五日 Raw 與當前簡化版 `Fetch → Normalize → Store → Analyze → Verify` 規則是否有重大不相容或資料品質 blocker。
+- 分析規格是否有造成錯誤投資判讀的重大風險；不要把單一 backfill 分析 sample 誤認成五日完整 normalized/report 歷史。
 
-Choose exactly one:
+## 特別排除
 
-- `PASS`
-- `PASS_WITH_FOLLOW_UP`
-- `CORRECTIVE_REQUIRED`
-- `INSUFFICIENT_EVIDENCE`
+- 不把長期 **00:00 / 07:00 unattended scheduler reliability** 當作目前進階 Gate；它是後續真實排程週期的獨立觀察。
+- 不把 Legacy A2、Natural Sample、A6 或舊 Gate A 文件恢復為新流程的必要條件。
+- 不為了形式完整要求無限增加樣本、文件、追蹤指標或新治理機制。
+- 不把 metadata 空值自動推論為錯誤；需判斷該來源日期是否應具值，並指出具體風險。
 
-`PASS_WITH_FOLLOW_UP` is explicitly a **GO** verdict. Observability improvements, more runtime samples, documentation polish, and long-term scheduler statistics are non-blocking unless tied to a demonstrated data-integrity failure.
+## 請提供唯一 Overall Verdict
 
-## Finding format
+- `PASS`：可前進。
+- `PASS_WITH_FOLLOW_UP`：**可前進**，非阻擋改善列入 backlog。
+- `CORRECTIVE_REQUIRED`：已證實重大缺陷，需最小修正與針對性重驗。
+- `INSUFFICIENT_EVIDENCE`：指出缺少的**精確來源、檔案、日期或證據**，不可泛稱「樣本不足」後要求重做架構。
 
-For each finding provide:
+對每個 finding 請列：`ID / Severity(BLOCKING, IMPORTANT, FOLLOW_UP) / Public GitHub evidence path / 可重現證據 / 為何影響結論 / 最小修復 / targeted retest 範圍`。
 
-- ID
-- Severity: `BLOCKING` / `IMPORTANT` / `FOLLOW_UP`
-- Evidence path
-- Exact reproduced observation
-- Why it matters
-- Minimal bounded correction
-- Retest scope
+最後必須回答：
 
-A `BLOCKING` finding must demonstrate a real failure mode affecting data correctness, target-date integrity, provenance, replayability, or analysis safety.
-
-## Separate assessments
-
-Report separately:
-
-- Five-day source coverage
-- Business-date integrity
-- Raw/hash integrity
-- Structured-data parseability
-- Revision/replay behavior
-- Metadata/provenance traceability
-- Simplified daily-rule compatibility
-- Runtime scheduler observation: `SEPARATE_NON_BLOCKING` unless an actual scheduler defect corrupts or misdates stored data
-
-Do not recommend new governance gates without a concrete demonstrated failure mode.
+**「這個專案現在可以進入下一階段嗎？如果不行，真正阻擋的是哪個可重現缺陷？」**
