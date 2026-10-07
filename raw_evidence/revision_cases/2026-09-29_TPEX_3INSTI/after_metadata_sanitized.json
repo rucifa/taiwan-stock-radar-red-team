@@ -1,0 +1,11 @@
+{
+  "source_id": "TPEX_3INSTI_HTML",
+  "business_key": "2026-09-29",
+  "first_seen_at_utc": "2026-09-29T09:16:54.966910+00:00",
+  "raw_sha256": "ab8f727e6012ed48afb427e1a253c9ee1086b1a0f5821313798a5638d56031a1",
+  "semantic_sha256": "66d9128b4ba1cb3fd79c703929b735141bd81f0dfc50f19c0f6f46f34b84189e",
+  "semantic_row_count": 916,
+  "byte_size": 933216,
+  "sanitized_public_copy": true,
+  "note": "Public red-team metadata projection; scheduler/private provenance omitted."
+}
