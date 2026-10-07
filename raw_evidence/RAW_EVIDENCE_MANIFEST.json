@@ -614,6 +614,22 @@
       "content_type": "text/html;charset=UTF-8",
       "raw_path": "raw_evidence/2026-10-02/TPEX_MARGIN_HTML/20261002T160059Z_587bca3732fefde5.html",
       "meta_path": "raw_evidence/2026-10-02/TPEX_MARGIN_HTML/20261002T160059Z_587bca3732fefde5.html.meta.json"
+    },
+    {
+      "trading_date": "2026-10-02",
+      "source_id": "TPEX_SHORT_LENDING_HTML",
+      "family": "short_lending",
+      "business_key": "2026-10-02",
+      "first_seen_at_utc": "2026-10-02T16:01:07.152361+00:00",
+      "raw_sha256": "059958a0c5509f901613ab51f28a08e219b573353929bf1493e4e9cc499929b9",
+      "semantic_sha256": "f28f7c46272ec1f3fc67f15cc4cfbbe34a4dbecd2ee9508f2dbb7484d33ca3a9",
+      "semantic_algorithm_version": "security_rows_v1",
+      "semantic_row_count": 932,
+      "source_scope_fingerprint": "c364ae7b0bd32b4930e829d641d5eec2af43a5baf92248e097fd1ce2cd0feea7",
+      "byte_size": 583412,
+      "content_type": "text/html;charset=UTF-8",
+      "raw_path": "raw_evidence/2026-10-02/TPEX_SHORT_LENDING_HTML/20261002T160107Z_059958a0c5509f90.html",
+      "meta_path": "raw_evidence/2026-10-02/TPEX_SHORT_LENDING_HTML/20261002T160107Z_059958a0c5509f90.html.meta.json"
     }
   ],
   "revision_cases": []
