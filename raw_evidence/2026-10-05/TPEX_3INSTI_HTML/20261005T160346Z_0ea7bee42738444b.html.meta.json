@@ -23,16 +23,5 @@
   "source_scope_fingerprint": "40729d814509696e1c44ec1c3992323834cac8c660f896e4379c87f4782b31d9",
   "source_scope_algorithm_version": "source_scope_v1",
   "byte_size": 932801,
-  "raw_path": "archive/TPEX_3INSTI_HTML/2026/10/05/20261005T160346Z_0ea7bee42738444b.html",
-  "a2_policy_version": "1.1",
-  "cycle_date": "2026-10-06",
-  "slot_id": "2026-10-06|OPERATIONAL_SNAPSHOT",
-  "capture_role": "OPERATIONAL_SNAPSHOT",
-  "trigger_origin": "CHATGPT_SCHEDULE",
-  "trigger_class": "PRIMARY_SCHEDULE",
-  "scheduler_id": "CHATGPT_OPERATIONAL_0000",
-  "automation_task_id": "6ac27639498481919043292332c4ef2c",
-  "scheduled_for": "2026-10-06T00:00:00+08:00",
-  "github_run_id": "37337742913",
-  "github_run_attempt": 1
+  "raw_path": "archive/TPEX_3INSTI_HTML/2026/10/05/20261005T160346Z_0ea7bee42738444b.html"
 }
