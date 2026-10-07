@@ -1,0 +1,16 @@
+{
+  "source_id": "TPEX_CORPORATE_ACTION_CSV",
+  "family": "corporate_action",
+  "source_config_version": "1.1",
+  "capture_version": "2.0",
+  "business_key": null,
+  "first_seen_at_utc": "2026-10-05T16:04:07.336876+00:00",
+  "content_type": "application/csv;charset=utf-8",
+  "content_sha256": "18f810a901380541ad0dabe6ceab3c0b9e0ca93cdfad4c92a78042b7f7e4d187",
+  "raw_sha256": "18f810a901380541ad0dabe6ceab3c0b9e0ca93cdfad4c92a78042b7f7e4d187",
+  "semantic_sha256": "18f810a901380541ad0dabe6ceab3c0b9e0ca93cdfad4c92a78042b7f7e4d187",
+  "semantic_algorithm_version": "raw_v1",
+  "byte_size": 9533,
+  "raw_path": "archive/TPEX_CORPORATE_ACTION_CSV/2026/10/05/20261005T160407Z_18f810a901380541.csv",
+  "sanitized_public_copy": true
+}
