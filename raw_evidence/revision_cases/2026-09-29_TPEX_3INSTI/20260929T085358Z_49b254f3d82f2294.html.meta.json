@@ -1,0 +1,20 @@
+{
+  "source_id": "TPEX_3INSTI_HTML",
+  "family": "institutional_flow",
+  "source_config_version": "1.0",
+  "capture_version": "1.1",
+  "business_key": "2026-09-29",
+  "url_requested": "https://www.tpex.org.tw/web/stock/3insti/daily_trade/3itrade_hedge_result.php?l=zh-tw&o=htm",
+  "url_final": "https://www.tpex.org.tw/web/stock/3insti/daily_trade/3itrade_hedge_result.php?l=zh-tw&o=htm",
+  "fetched_at_utc": "2026-09-29T08:53:58.505498+00:00",
+  "first_seen_at_utc": "2026-09-29T08:53:58.505498+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "http_date": "Tue, 29 Sep 2026 08:54:05 GMT",
+  "last_modified": null,
+  "etag": null,
+  "cache_control": "private",
+  "content_sha256": "49b254f3d82f229494bc59c9e21ca6c224c5ec0534a74758444aab8f5b245ca6",
+  "byte_size": 933214,
+  "raw_path": "archive/TPEX_3INSTI_HTML/2026/09/29/20260929T085358Z_49b254f3d82f2294.html"
+}
